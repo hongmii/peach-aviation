@@ -1,0 +1,53 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* web font */
+
+/* reset */
+html {-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-size-adjust: 100%;}
+body {margin: 0;}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {display: block;}
+h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd {margin: 0; padding: 0;}
+h1, h2, h3, h4, h5, h6 {font-weight: 600;}
+a {color: inherit; text-decoration: inherit;}
+img {vertical-align: middle; max-width: 100%;}
+a img {border: none;}
+li {list-style: none;}
+address, em, i {font-style: normal;}
+table {border-collapse: collapse;}
+table caption {overflow: hidden; width: 0; height: 0; text-indent: -9999px;}
+span.fontawesome {display: inline-block; vertical-align: middle;}
+iframe.hidden {position: absolute; left: -9999px;}
+.pc {display: none !important;}
+br.only-pc {content: '';}
+br.only-pc:after {content: '\00a0';}
+div.hidden {position: absolute; left: -9999px;}
+
+
+/* common  */
+body {font-family: 'Noto Sans KR', '나눔고딕', '맑은 고딕', 'malgun gothic', '돋움', 'Dotum', 'Apple SD Gothic Neo', 'Helvetica', sans-serif; font-weight: 500; font-size: 13px; color: #3b3b3d; background: #ffffff;}
+#wrapper {position: relative; overflow: hidden; max-width: 850px; margin: 0 auto; box-sizing: border-box; min-width: 320px; min-height: 100vh;}
+#skip-nav {position: fixed; left: 0; top: -41px; width: 100%; line-height: 40px; font-size: 16px; text-align: center; background: rgba(0, 0, 0, 0.4); color: #ffffff; border-bottom: rgba(255, 255, 255, 0.8); z-index: 100000; transition: top 0.3s;}
+#skip-nav:focus {top: 0;}
+#header {position: fixed; left: 0; top: 0; width: 100%; height: 60px; z-index: 10000;}
+#header.scroll {box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3); background: #ffffff;}
+#header h1 {position: absolute; left: 20px; top: 50%; width: 160px; transform: translate(0, -50%); font-size: 2px; z-index: 1200;}
+#header h1 img {position: absolute; left: 0; top: 50%; transform: translate(0, -50%); opacity: 0; transition: opacity 0.3s;}
+#header h1 img.on {opacity: 1;}
+#header a.menu {position: absolute; right: 20px; top: 50%; transform: translate(0, -50%); width: 40px; height: 40px; border-radius: 50px; background: #395aff; color: #ffffff; z-index: 1200; transition: color 0.3s ease-out 0s;}
+#header a.menu:before {content: ''; position: absolute; left: 10px; top: 14px; width: 20px; height: 2px; background: #ffffff; transition: transform 0.3s ease-out 0s;}
+#header a.menu span {position: absolute; left: 10px; top: 19px; width: 20px; height: 2px; background: #ffffff; overflow: hidden; text-indent: -999px; transition: opacity 0.3s ease-out 0s;}
+#header a.menu:after {content: ''; position: absolute; left: 10px; top: 24px; width: 20px; height: 2px; background: #ffffff; transition: transform 0.3s ease-out 0s;}
+#header a.menu.close {background: #ff2e63;}
+#header a.menu.close:before {transform: rotate(45deg) translate(4px, 3px);}
+#header a.menu.close span {opacity: 0;}
+#header a.menu.close:after {transform: rotate(-45deg) translate(4px, -3px);}
+#gnb {position: fixed; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.9); color: #ffffff; box-sizing: border-box; padding-top: 120px; font-size: 40px; font-weight: 700; left: -100%;}
+#gnb.open {animation: open-gnb 0.5s ease-out 0s 1 normal forwards;}
+#gnb.close {animation: close-gnb 0.3s ease-out 0s 1 normal forwards;}
+#gnb ul li {position: relative; left: 20px;}
+#gnb ul li + li {margin-top: 30px;}
+#gnb ul li.on a {color: #ff2e63;}
+#gnb.open ul li:nth-child(1) {animation: show-gnb-list 0.5s ease-out 0s 1 normal backwards;}
+#gnb.open ul li:nth-child(2) {animation: show-gnb-list 0.5s ease-out 0.1s 1 normal backwards;}
+#gnb.open ul li:nth-child(3) {animation: show-gnb-list 0.5s ease-out 0.2s 1 normal backwards;}

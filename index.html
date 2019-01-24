@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home | Peach Aviation</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="css/style.css" media="screen and (min-width: 851px)" rel="stylesheet" /> -->
+    <link href="css/index.css" rel="stylesheet" />
+    <!-- <link href="css/style_mobile.css" media="screen and (max-width: 850px)" rel="stylesheet" /> -->
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Noto+Sans|Noto+Sans+KR" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/script.js"></script>
+
+
+</head>
+
+
+<body>
+    <div id="wrap">
+            <a href="#main" id="skip-nav">본문 바로가기</a>
+    <header>
+        <h2 class="hide">회원가입/로그인</h2>
+        <div class="join">
+         <ul>
+            <li>
+                <a href="#">회원가입</a>
+            </li>
+            <li>
+                <a href="#">로그인</a>
+            </li>
+            <li class="select-style">
+                <select>
+                    <option value>한국어</option>
+                    <option value="2">English</option>
+                    <option value="3">中國語</option>
+                    <option value="4">日本語</option>
+                </select>
+            </li>
+        </ul>
+        </div>
+        <div class="logo-gnb-wrap"><h1 class="logo"><a href=""><img src="img/logo-header.png" alt="피치항공로고"></a></h1>
+        <h2 class="hide">대메뉴</h2>
+        <div>
+        <nav class="gnb">
+                <ul class="dep1">
+                        <li class="dep1List">
+                            <a href="#">항공권 예약</a>
+                            <ul class="dep2"></ul>
+                        </li>
+                        <li class="dep1List">
+                            <a href="#">예약 조회/변경</a>
+                            <ul class="dep2">
+                                <li class="dep2List"><a href="#">예약 조회/변경/환불</a></li>
+                                <li class="dep2List"><a href="#">온라인 체크인</a></li>
+                            </ul>
+                        </li>
+                        <li class="dep1List">
+                            <a href="#">서비스안내</a>
+                            <ul class="dep2">
+                                <li class="dep2List"><a href="#">항공권 안내</a></li>
+                                <li class="dep2List"><a href="#">공항 서비스</a></li>
+                                <li class="dep2List"><a href="#">기내 서비스</a></li>
+                                <li class="dep2List"><a href="#">모바일서비스</a></li>
+                            </ul>
+                        </li>
+                        <li class="dep1List">
+                            <a href="#">여행정보</a>
+                            <ul class="dep2">
+                                <li class="dep2List"><a href="#">교통티켓 안내</a></li>
+                                <li class="dep2List"><a href="#">호텔</a></li>
+                                <li class="dep2List"><a href="#">렌터카</a></li>
+                                <li class="dep2List"><a href="#">여행자보험</a></li>
+                                <li class="dep2List"><a href="#">쇼핑</a></li>
+                                <li class="dep2List"><a href="#">Wifi</a></li>
+                            </ul>
+                        </li>
+                        <li class="dep1List">
+                            <a href="#">이벤트/새소식</a>
+                            <ul class="dep2  border-none">
+                                <li class="dep2List"><a href="#">세일</a></li>
+                                <li class="dep2List"><a href="#">캠페인</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="bg-color"></div>
+        </nav>
+    </div>
+    </div>
+    </header>
+    <!-- // header -->
+
+    <section class="main-visual">
+        <h2 class="hide">메인비주얼</h2>
+        <div class="image-slide">
+            <ul class="slide">
+                    <li>
+                        <a href="#">
+                            <img alt="신규가입 4종쿠폰 최대 2만원할인" src="img/main-visual.jpg" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img alt="수험생 20%특별할인" src="img/main-visual2.jpg" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img alt="무안,대구 일본규슈 1명가면! 1명공짜!" src="img/main-visual3.jpg" />
+                        </a>
+                    </li>
+                </ul>
+                <ul class="indicator">
+                    <li class="on">
+                        <a href="#"></a>
+                    </li>
+                    <li>
+                        <a href="#"></a>
+                    </li>
+                    <li>
+                        <a href="#"></a>
+                    </li>
+                </ul>
+        </div>
+    </section>
+    <!-- main-visual -->
+    
+    <section class="ticket-booking">
+        <h2>항공권 예매</h2>
+        <div class="tab_content">
+                <input type="radio" name="tabmenu" id="tab01" checked>
+                <label for="tab01">일반예매</label>
+                <input type="radio" name="tabmenu" id="tab02">
+                <label for="tab02">다구간예매</label>
+
+                <div class="conbox con1">
+                    <input type="checkbox" id="chkbox">
+                    <label for="chkbox"><em></em>왕복</label>
+                    <input type="checkbox" id="chkbox">
+                    <label for="chkbox"><em></em>편도</label>
+                    <input type="checkbox" id="chkbox">
+                    <label for="chkbox"><em></em>자유여정</label>
+                    
+                    <table>
+                        <caption class="hide">왕복/편도 선택 가능한 항공편 예매구간</caption>
+                        <tr>
+                            <th>출발지</th>
+                            <td>
+                                <select name="" id="">
+                                            <option value="1">서울/인천(ICN)</option>
+                                            <option value="2">부산/김해(PUS)</option>
+                                            <option value="3">홍콩(HKG)</option>
+                                            <option value="4">타이페이(TPE)</option>
+                                            <option value="5">카오슝(KHH)</option>
+                                            <option value="6">상하이/푸동(PVG)</option>
+                                            <option value="7">방콕/수완나품(BKK)</option>
+                                            <option value="8">오사카/간사이(KIX)</option>
+                                            <option value="9">도쿄/나리타(NRT)</option>
+                                </select>
+                            </td>
+                            <th>도착지</th>
+                            <td>
+                                    <select name="" id="">
+                                            <option value="1">오사카/간사이(KIX)</option>
+                                            <option value="2">도쿄/나리타(NRT)</option>
+                                            <option value="3">서울/인천(ICN)</option>
+                                            <option value="4">부산/김해(PUS)</option>
+                                            <option value="5">홍콩(HKG)</option>
+                                            <option value="6">타이페이(TPE)</option>
+                                            <option value="7">카오슝(KHH)</option>
+                                            <option value="8">상하이/푸동(PVG)</option>
+                                            <option value="9">방콕/수완나품(BKK)</option>
+                            
+                                        </select>
+                            </td>
+                            <td rowspan="2" class="person-num">
+                               <span>성인</span> <input type="number" id="num" value="0">
+                               <span>소아</span><input type="number" id="num" value="0">
+                               <span>유아</span><input type="number" id="num" value="0">
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <th>가는날</th>
+                            <td><input type="date" id="date"></td>
+                            <th>오늘날</th>
+                            <td><input type="date" id="date"></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="conbox con2">
+                        <table>
+                                <caption class="hide">다구간여정 선택 가능한 항공편 예매구간</caption>
+                                <tr>
+                                    <th>구간1 노선선택</th>
+                                    <td>
+                                        <select name="" id="">
+                                                    <option value="1">서울/인천(ICN)</option>
+                                                    <option value="2">부산/김해(PUS)</option>
+                                                    <option value="3">홍콩(HKG)</option>
+                                                    <option value="4">타이페이(TPE)</option>
+                                                    <option value="5">카오슝(KHH)</option>
+                                                    <option value="6">상하이/푸동(PVG)</option>
+                                                    <option value="7">방콕/수완나품(BKK)</option>
+                                                    <option value="8">오사카/간사이(KIX)</option>
+                                                    <option value="9">도쿄/나리타(NRT)</option>
+                                        </select>
+                                    </td>
+                                    <th>구간2 노선선택</th>
+                                    <td>
+                                            <select name="" id="">
+                                                    <option value="1">오사카/간사이(KIX)</option>
+                                                    <option value="2">도쿄/나리타(NRT)</option>
+                                                    <option value="3">서울/인천(ICN)</option>
+                                                    <option value="4">부산/김해(PUS)</option>
+                                                    <option value="5">홍콩(HKG)</option>
+                                                    <option value="6">타이페이(TPE)</option>
+                                                    <option value="7">카오슝(KHH)</option>
+                                                    <option value="8">상하이/푸동(PVG)</option>
+                                                    <option value="9">방콕/수완나품(BKK)</option>
+                                    
+                                                </select>
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <th>구간1 가는날</th>
+                                    <td><input type="date" id="date"></td>
+                                    <th>구간2 오는날</th>
+                                    <td><input type="date" id="date"></td>
+                                </tr>
+                            </table>
+                </div>
+            </div>
+    </section>
+    <div class="search-btn"><a href="#">항공권 검색</a></div>
+    <!-- ticket-booking -->
+
+
+    <section class="special-zone-wrap">
+        <div class="special-text">
+            <h2>특가존</h2>
+            <p>최저가로 즐기는 일본여행</p>
+            <p class="indicator">
+                    <a href="#" class="prev"></a>
+                    <a href="#" class="play"></a>
+                    <a href="#" class="next"></a>
+            </p>
+        </div>
+
+        <div class="special-image banner-slide">
+            <div class="special-image-slide-box box">
+                <ul class="banner">
+                        <li>
+                                <a href="#">
+                                    <img alt="" src="img/spacial_okinawa.jpg" />
+                                </a>
+                                <div class="text-box">
+                                    <h3>인천 ~ 오키나와</h3>
+                                    <p class="price">KRW <span>43,900 ~</span></p>
+                                    <p class="oneWay">(편도총액)</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img alt="" src="img/special_kansai.jpg" />
+                                </a>
+                                <div class="text-box">
+                                    <h3>인천 ~ 간사이</i></h3>
+                                    <p class="price">KRW <span>36,900 ~</span></p>
+                                    <p class="oneWay">(편도총액)</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img alt="" src="img/special_kobe.jpg" />
+                                </a>
+                                <div class="text-box">
+                                    <h3>인천 ~ 고베</i></h3>
+                                    <p class="price">KRW <span>49,900 ~</span></p>
+                                    <p class="oneWay">(편도총액)</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img alt="" src="img/special_osaka (2).jpg" />
+                                </a>
+                                <div class="text-box">
+                                    <h3>인천 ~ 오사카</i></h3>
+                                    <p class="price">KRW <span>39,900 ~</span></p>
+                                    <p class="oneWay">(편도총액)</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img alt="" src="img/special_kusiro.jpg" />
+                                </a>
+                                <div class="text-box">
+                                    <h3>인천 ~ 히로시마</i></h3>
+                                    <p class="price">KRW <span>36,900 ~</span></p>
+                                    <p class="oneWay">(편도총액)</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img alt="" src="img/special_saporo.jpg" />
+                                </a>
+                                <div class="text-box">
+                                    <h3>인천 ~ 삿포로</i></h3>
+                                    <p class="price">KRW<span>43,900 ~</span></p>
+                                    <p class="oneWay">(편도총액)</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img alt="" src="img/special_osaka.jpg" />
+                                </a>
+                                <div class="text-box">
+                                    <h3>인천 ~ 오사카</i></h3>
+                                    <p class="price">KRW<span>41,900 ~</span></p>
+                                    <p class="oneWay">(편도총액)</p>
+                                </div>
+                            </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+     <!-- //special-zone-wrap -->
+
+     <section class="rent-wrap">
+            <div class="rent-contents-wrap">
+                <p><img src="img/img-features-peach-3.png" alt="피치항공과 함께하는 간편한 렌트카서비스"></p>
+                <h2>Rent Service</h2>
+                <p class="txt">피치항공과 함께하는 간편한 렌트카 서비스를 만나보세요</p>
+                <a href="#">자세히보기</a>
+            </div>
+        </section>
+        <!-- //lets-go-okinawa -->
+
+
+        <section class="news-notice">
+                <article class="notice">
+                    <h2>새소식</h2>
+                    <ul class="list">
+                        <li><a href="#">
+                                <p class="subject">국제관광여객세 부가 안내</p><span class="date">2019.01.14</span>
+                            </a></li>
+                        <li><a href="#">
+                                <p class="subject">기내반입 수하물 조건 및 요금변경안내</p><span class="date">2019.01.11</span>
+                            </a></li>
+                        <li><a href="#">
+                                <p class="subject">시스템 리뉴얼 안내</p><span class="date">2019.01.11</span>
+                            </a></li>
+                        <li><a href="#">
+                                <p class="subject">Smart Baggage의 취급 변경</p><span class="date">2019.01.07</span>
+                            </a></li>
+                        <li><a href="#">
+                                <p class="subject">기내반입 수하물에 대하여</p><span class="date">2018.12.31</span>
+                            </a></li>
+                    </ul>
+                    <div class="more"><a href="">more <i class="fas fa-caret-right"></i></a></div>
+        
+                </article>
+            </section>
+
+
+
+
+
+
+    
+            <section class="event-wrap">
+                    <div class="event-list">
+                        <h2>Special Peach</h2>
+                        <p>피치항공만의 특별한 혜택을 누려보세요.</p>
+                        <a href="#" class="more">더보기 +</a>
+                        <ul class="special-list">
+                            <li>
+                                <h2>호텔예약</h2>
+                                <a href="#">
+                                    <img src="img/hotel.jpg" alt="호텔예약 이미지">
+            
+                                </a>
+                            </li>
+                            <li>
+                                <h2>색다른 고베여행</h2>
+                                <a href="#">
+                                    <img src="img/kobe-2154653_1920.jpg" alt="고베여행 이미지">
+            
+                                </a>
+                            </li>
+                            <li>
+                                <h2>기모노체험</h2>
+                                <a href="#">
+                                    <img src="img/kimono.jpg" alt="기모노체험 이미지">
+            
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <!-- event-wrap -->
+            
+                <footer>
+                    <section class="footer-top-wrap">
+                        <ul class="footer-top-inner">
+                            <li>
+                                <h3>
+                                    <a href="#">항공권 예약</a>
+                                </h3>
+                                <ul></ul>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="#">예약 조회/변경</a>
+                                </h3>
+                                <ul>
+                                    <li>
+                                        <a href="#">예약조회/변경/환불</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">온라인체크인</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="#">서비스안내</a>
+                                </h3>
+                                <ul>
+                                    <li>
+                                        <a href="#">항공권 안내</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">공항서비스</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">기내서비스</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">모바일서비스</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="#">여행정보</a>
+                                </h3>
+                                <ul>
+                                    <li>
+                                        <a href="#">교통티켓안내</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">호텔</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">렌트카</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">여행자보험</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Wifi</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>
+                                    <a href="#">이벤트/새소식</a>
+                                </h3>
+                                <ul>
+                                    <li>
+                                        <a href="#">특가</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">캠페인</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </section>
+                    <!-- //bottom-menu-wrap -->
+            
+                    <section class="footer-middle-wrap">
+                        <ul class="footer-middle-inner">
+                            <li>
+                                <a href="#">회사소개</a>
+                            </li>
+                            <li>
+                                <a href="#">보도자료</a>
+                            </li>
+                            <li>
+                                <span> <a href="#">개인정보 보호방침</a></span>
+                            </li>
+                            <li>
+                                <a href="#">사이트 이용규약</a>
+                            </li>
+                            <li>
+                                <a href="#">운송약관</a>
+                            </li>
+                        </ul>
+                    </section>
+            
+                    <section class="footer-bottom-wrap">
+                        <div class="footer-bottom-inner">
+                            <h2 class="logo">
+                                <a href="#">
+                                    <img src="img/peach-logo.png" alt="피치항공로고">
+                                </a>
+                            </h2>
+                            <ul class="sns">
+                                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                            </ul>
+                            <address>
+                                Peach Aviation주식회사
+                                <br>오사카후 센난군 다지리쵸 센슈쿠코나카 이치반치
+                                <br>사업자 등록번호:1201-01-047384
+                                <br> Copyright (C) 2011 Peach Aviation Limited. </address>
+                        </div>
+                    </section>
+                </footer>
+            
+            
+            
+                </div>
+            
+            
+            
+            </body>
+            
+            </html>
