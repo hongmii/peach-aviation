@@ -3,20 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Home | Peach Aviation</title>
+    <title>Home | Peach-Aviation</title>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link href="css/style.css" media="screen and (min-width: 851px)" rel="stylesheet" /> -->
     <link href="css/index.css" rel="stylesheet" />
-    <!-- <link href="css/style_mobile.css" media="screen and (max-width: 850px)" rel="stylesheet" /> -->
     <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Noto+Sans|Noto+Sans+KR" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
         crossorigin="anonymous">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/script.js"></script>
-
-
 </head>
 
 
@@ -49,7 +42,7 @@
         <nav class="gnb">
                 <ul class="dep1">
                         <li class="dep1List">
-                            <a href="#">항공권 예약</a>
+                            <a href="#" class="forfocus">항공권 예약</a>
                             <ul class="dep2"></ul>
                         </li>
                         <li class="dep1List">
@@ -199,7 +192,7 @@
                                 <tr>
                                     <th>구간1 노선선택</th>
                                     <td>
-                                        <select name="" id="">
+                                        <select title="출발지">
                                                     <option value="1">서울/인천(ICN)</option>
                                                     <option value="2">부산/김해(PUS)</option>
                                                     <option value="3">홍콩(HKG)</option>
@@ -213,7 +206,7 @@
                                     </td>
                                     <th>구간2 노선선택</th>
                                     <td>
-                                            <select name="" id="">
+                                            <select title="도착지">
                                                     <option value="1">오사카/간사이(KIX)</option>
                                                     <option value="2">도쿄/나리타(NRT)</option>
                                                     <option value="3">서울/인천(ICN)</option>
@@ -247,9 +240,8 @@
             <h2>특가존</h2>
             <p>최저가로 즐기는 일본여행</p>
             <p class="indicator">
-                    <a href="#" class="prev"></a>
-                    <a href="#" class="play"></a>
-                    <a href="#" class="next"></a>
+                    <a href="#" class="prev" title="이전"><img src="img/prev-arrow-64-24.png" alt="이전버튼"></a>
+                    <a href="#" class="next" title="다음"><img src="img/next-arrow-25-24.png" alt="이전버튼"></a>
             </p>
         </div>
 
@@ -368,12 +360,6 @@
                 </article>
             </section>
 
-
-
-
-
-
-    
             <section class="event-wrap">
                     <div class="event-list">
                         <h2>Special Peach</h2>
@@ -526,13 +512,13 @@
                         </div>
                     </section>
                 </footer>
-            
-            
-            
                 </div>
             
             
-            
+                
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+                <script src="js/jquery-3.3.1.min.js"></script>
+                <script src="js/script.js"></script>
             </body>
             
             </html>
